@@ -13,7 +13,7 @@ provider "aws" {
 
 module "apache" {
 	source  = "app.terraform.io/jonathan_levi/example-apache-server/aws"
-	version = "1.0.0"
+	version = "1.1.0"
 	my_ip_with_cidr = "MY_OWN_IP_ADDRESS/32"
 	public_key = "ssh-rsa AAAAB..."
 	instance_type = "t2.micro"
