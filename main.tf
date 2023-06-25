@@ -9,10 +9,6 @@ data "aws_subnets" "subnets" {
   }
 }
 
-output "subnet_cidr_blocks" {
-  value = tolist(data.aws_subnets.subnets.ids)[0]
-}
-
 resource "aws_security_group" "sg_my_server" {
   name        = "sg_my_server"
   description = "MyServer Security Group"
