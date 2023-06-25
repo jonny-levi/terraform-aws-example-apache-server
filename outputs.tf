@@ -1,3 +1,3 @@
 output "public_ip" {
-  value = tolist(data.aws_subnets.subnets.ids)[0]
+  value = var.server_name.public_ip
 }
